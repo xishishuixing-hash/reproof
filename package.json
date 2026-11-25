@@ -1,0 +1,42 @@
+{
+  "name": "@zhehua/re-proof",
+  "version": "0.1.0",
+  "description": "Record a command, prove it again later. Reproducible evidence for anything you claim about a system.",
+  "type": "module",
+  "bin": {
+    "reproof": "bin/reproof.mjs"
+  },
+  "exports": {
+    ".": "./lib/index.mjs",
+    "./store": "./lib/store.mjs",
+    "./run": "./lib/run.mjs",
+    "./verify": "./lib/verify.mjs",
+    "./report": "./lib/report.mjs"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node test/smoke.mjs",
+    "demo": "node bin/reproof.mjs --help"
+  },
+  "keywords": [
+    "evidence",
+    "reproducible",
+    "verification",
+    "replay",
+    "cli",
+    "audit",
+    "forensics"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

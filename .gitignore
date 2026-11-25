@@ -1,0 +1,4 @@
+node_modules/
+.reproof/
+*.log
+.DS_Store
